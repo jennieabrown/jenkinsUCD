@@ -3,7 +3,7 @@ pipeline {
 stages {
     stage('doBuildStuff') {
         steps {
-           echo "build here"
+           echo "build ithere"
          }
     }		   
     stage('runUCD'){
@@ -13,7 +13,7 @@ stages {
     }
     stage('package'){
       steps{
-      sh 'mvn package'
+       echo "do something more..."
       }
     }
   }
