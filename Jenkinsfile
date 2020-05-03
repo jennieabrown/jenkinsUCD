@@ -3,12 +3,12 @@ agent any
 stages {
     stage('doBuildStuff') {
         steps {
-           echo "build ithere"
+           echo "build it here"
          }
-    }		   
+    }
     stage('runUCD'){
       steps {
-        sh 'ucd/showProps.sh'
+        sh 'ucd/showProps.cmd "WP-Publish"'
       }
     }
     stage('package'){
