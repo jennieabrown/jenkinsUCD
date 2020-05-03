@@ -8,7 +8,7 @@ stages {
     }
     stage('runUCD'){
       steps {
-        sh 'ucd/showProps.cmd "WP-Publish"'
+        bat 'ucd/showProps.cmd "WP-Publish"'
       }
     }
     stage('package'){
